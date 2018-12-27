@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 1</title>
+    <script>
+        function randomRange(startNum, endNum){
+            var output = Math.floor(Math.random() * endNum) + startNum;
+            return output;
+        }
+        console.log("Random number between two numbers:", randomRange(1, 10));
+
+        function randomRangeArray(array){
+            var output = array[Math.floor(Math.random() * array.length)];
+            return output;
+        }
+        console.log("Random number from array:", randomRangeArray([2, 4, 6, 8, 10]));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
