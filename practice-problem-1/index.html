@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 1</title>
+    <script>
+        function doMath(num1, num2, operator){
+            var output;
+
+            if(operator === "+"){
+                output = num1 + num2;
+                return output;
+            }
+            else if(operator === "-"){
+                output = num1 - num2;
+                return output;
+            }
+            else if(operator === "*" || operator === "x" || operator === "X"){
+                output = num1 * num2;
+                return output;
+            }
+            else if(operator === "/"){
+                output = num1 / num2;
+                return output;
+            }
+        }
+        console.log(doMath(10, 5, "*"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
