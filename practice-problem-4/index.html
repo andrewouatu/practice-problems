@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 4</title>
+    <script>
+        function findMiddleOfString(string){
+            var stringLength = string.length;
+
+            // If string is EVEN
+            if(stringLength %2 === 0){
+                var middleOfString = stringLength /2;
+                //Begins to extract letters from given start point and continues to extract until given end point
+                var evenMiddleLetters = string.slice(middleOfString -1, middleOfString +1);
+                return evenMiddleLetters;
+            }
+
+            //If string is ODD
+            else{
+                //Rounds down for decimal results
+                var roundedResult = Math.floor(string.length/2);
+                var oddMiddleLetter = string.charAt(roundedResult);
+                return oddMiddleLetter;
+            }
+        }
+
+        console.log("Middle of string:", findMiddleOfString('california'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
