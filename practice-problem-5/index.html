@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 5</title>
+    <script>
+       function invertNegatives(number){
+           if(typeof number === 'string'){
+               return false
+           }
+           else if(number > 0){
+               var makeNegative = -1 * number;
+               return makeNegative;
+           }
+           return number
+       }
+
+       console.log("Result Is:", invertNegatives('10'))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
