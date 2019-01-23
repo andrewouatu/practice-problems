@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 6</title>
+    <script>
+       function findVowels(string){
+            var word = string.toLowerCase();
+            var vowels = 'aeiou';
+            var output = '';
+  
+            for(var i=0; i < word.length; i++){
+                var currentLetter = word[i];
+                for(var x=0; x < vowels.length; x++){
+                    if(currentLetter === vowels[x]){
+                    output = output + currentLetter;
+                    }
+                }
+            }
+            return output
+        }
+        console.log(findVowels('four score and seven years ago'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

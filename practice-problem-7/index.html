@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 7</title>
+    <script>
+        function alternateCaps(string){
+            var word = string.toLowerCase();
+            var output = '';
+  
+            for(var i = 0; i < word.length; i++){
+                //If letter is EVEN
+                if(i%2 === 0){
+                output = output + word[i];
+                }
+                //If letter is ODD
+                else{
+                output = output + word[i].toUpperCase();
+                    }
+            }
+            return output;
+        }
+        console.log(alternateCaps('yosemite'))
+    </script>
+</head>
+<body>
+
+</body>
+</html>
