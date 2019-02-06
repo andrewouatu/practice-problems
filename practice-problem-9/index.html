@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 9</title>
+    <script>
+       function arraySorter(array){
+            var output = [];
+            var stringArray = [];
+            var numberArray = [];
+            var booleanArray = [];
+            
+            for(var i=0; i < array.length; i++){
+                var item = array[i];
+                
+                if(typeof item === 'string'){
+                stringArray.push(item);
+                }
+                else if(typeof item === 'number'){
+                numberArray.push(item);
+                }
+                else{
+                booleanArray.push(item);
+                }
+            }
+            output.push(stringArray, numberArray, booleanArray);
+            return output;
+        }
+        console.log(arraySorter(['hello', 34, true, false, 'goodbye', 56, 12, '25', true]));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
