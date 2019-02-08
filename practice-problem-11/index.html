@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 11</title>
+    <script>
+       function fizzBuzz(){
+  
+            for(var i=0; i < 101; i++){
+            var currentNumber = i;
+    
+                if(currentNumber%3 === 0 && currentNumber%5 === 0){
+                    console.log("FizzBuzz");
+                }
+                else if(currentNumber%3 === 0){
+                    console.log("Fizz");
+                }
+                else if(currentNumber%5 === 0){
+                    console.log("Buzz");
+                }
+                else{
+                console.log(currentNumber)
+                }       
+            }
+        }
+
+        console.log(fizzBuzz());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
