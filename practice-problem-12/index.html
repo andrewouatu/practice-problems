@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Problem 12</title>
+    <script>
+        function randomizeArray(array){
+            var output = [];
+            while(array.length > 0){
+                var randomNumber = Math.floor(Math.random() * array.length);
+                output.push(array[randomNumber]);
+                array.splice(randomNumber, 1);
+            }
+            return output;
+        }
+        console.log(randomizeArray([5,3,2,5,1]))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
